@@ -1,0 +1,93 @@
+main {
+    background-color: #F39494;
+    width: 1440px;
+    height: 1024px;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFFEFE;
+    width: 582px;
+    height: 573px;
+    border-radius: 10px;
+    margin: 65px auto;
+    padding: 80px 94px;
+}
+
+label {
+    color: #666666;
+}
+
+input {
+    background-color: #F5F5F5;
+    border: none;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    padding: 0 0 0 11px;
+}
+
+#username,
+#email {
+    width: 394px;
+    height: 44px;
+    margin: 47px 0 0 94px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #999999;
+}
+
+#email {
+    margin: 22px 0 0 94px;
+}
+
+#name,
+#lastname {
+    width: 197px;
+    height: 44px;
+    margin: 22px 0 0 94px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #999999;
+}
+
+button {
+    background-color: #089FE0;
+    color: #FFFFFF;
+    border: 3px;
+    margin: 22px 0 0 94px;
+    border-radius: 5px;
+    width: 394px;
+    height: 44px;
+    font-size: 18px;
+}
+
+a {
+    color: #089FE0;
+}
+
+.usloviya {
+    text-decoration: none;
+}
+
+#usloviyasogl {
+    margin: 22px 0 0 94px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 72px 0 0 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #666666;
+    font-family: Open Sans;
+    font-weight: 400;
+    text-align: center;
+    margin: 3px;
+}
