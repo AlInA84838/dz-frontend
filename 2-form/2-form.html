@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -12,14 +12,15 @@
     <main>
         <form action="#">
             <div class="container">
-                <h1>Регистрация</h1>
-                <h2>Уже есть аккаунт? <a href="!">Войти</a></h2>
-
+                <div>
+                    <h1>Регистрация</h1>
+                    <h2>Уже есть аккаунт? <a href="!">Войти</a></h2>
+                </div>
                 <div>
                     <label for="username"></label>
                     <input type="text" name="username" id="username" placeholder="Название компании">
                 </div>
-                <div>
+                <div id="nameandsurname">
                     <label for="name"></label>
                     <input type="text" placeholder="Имя" id="name">
                     <label for="lastname"></label>
@@ -29,9 +30,7 @@
                     <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="E-mail">
                 </div>
-                <button>Зарегистрироваться
-                    <img src=" ./image/Arrow 1.svg" alt="стрелочка вправо">
-                </button>
+                <button>Зарегистрироваться</button>
                 <div>
                     <input type="checkbox" name="usloviyasogl" id="usloviyasogl" required>
                     <label for="usloviyasogl">Я прочитал и примаю <a href="@" class="usloviya"> Условия соглашения
