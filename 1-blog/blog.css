@@ -11,18 +11,31 @@ body {
     height: 100%;
 }
 
+main {
+    margin: 0 auto;
+    background: linear-gradient(#374151, #111827);
+}
+
+header {
+    background-color: #374151;
+}
+
+#square {
+    width: 35px;
+    height: 35px;
+    background: #4B5563;
+    border-radius: 3px;
+    background-image: url(./images/B.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
+}
+
 header a {
     font-size: 18px;
     font-weight: 400;
     line-height: 18.75px;
     color: #FFFFFF;
     text-decoration: none;
-}
-
-header {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 71px 0 69;
 }
 
 nav ul {
@@ -32,6 +45,13 @@ nav ul {
 }
 
 #search {
+    background-image: url(./images/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 18px;
+    outline: none;
+    height: 19px;
+    font-size: 16px;
+    color: #FFFFFF;
     width: 224px;
     height: 40px;
     border-radius: 100px;
@@ -40,32 +60,16 @@ nav ul {
     padding: 10px 50px;
 }
 
-main {
-    background-color: #374151;
-    margin: 0 auto;
-}
-
-
 .content {
     max-width: 708px;
     margin: 0 auto;
 }
 
-
-.content p {
-    font-family: Roboto;
-    text-align: left;
-}
-
-.par1 {
-    font-size: 20px;
-    line-height: 32px;
-}
-
-.par2,
-.par3 {
-    font-size: 16px;
-    line-height: 30px;
+#date {
+    margin: 69 auto 0;
+    width: 180px;
+    height: 16px;
+    padding: 0;
 }
 
 h1 {
@@ -76,6 +80,11 @@ h1 {
     line-height: 38px;
     max-width: 525px;
     text-align: center
+}
+
+.developer {
+    width: 214px;
+    margin: 0 auto;
 }
 
 .name {
@@ -95,44 +104,32 @@ h1 {
     margin-bottom: 28px;
 }
 
-.developer {
-    width: 214px;
-    margin: 0 auto;
-}
-
 .mac {
     text-align: center;
 }
 
+.content p {
+    font-family: Roboto;
+    text-align: left;
+    color: #FFFFFF;
+}
+
 .par1 {
     font-size: 20px;
-    font-weight: 400;
     line-height: 32px;
-    color: #FFFFFF;
-    height: 225px;
-    width: 700px;
-    margin: 70px auto 30px;
+    margin: 69px auto 0;
 }
 
 .par2,
 .par3 {
     font-size: 16px;
-    font-weight: 400;
     line-height: 30px;
-    color: #FFFFFF;
-    width: 700px;
+    margin: 50px auto 0;
 }
 
-.par2 {
-    height: 110px;
-    margin: 0 auto 10px;
-}
-
-.par3 {
-    margin: 0 auto 30px;
-}
 
 footer {
+    background: #121928;
     color: #C9CCCF;
     font-size: 16px;
     font-weight: 400;
@@ -140,7 +137,9 @@ footer {
 }
 
 .footer {
+    background: #121928;
     margin: 0 auto 77px;
     height: 28px;
     width: 226px;
+    margin: 100px auto 77px;
 }
