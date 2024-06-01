@@ -90,18 +90,18 @@ input {
     font-size: 18px;
     color: #999999;
     flex: row wrap;
-    justify-content: space-between;
+    column-gap: 1px;
 }
 
 #name {
-    width: 186px;
+    width: 185px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     justify-content: space-between;
 }
 
 #lastname {
-    width: 186px;
+    width: 185px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
