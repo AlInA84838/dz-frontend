@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("./font/roboto/Roboto-Regular.ttf");
-}
-
 * {
     box-sizing: border-box;
 }
@@ -16,7 +11,8 @@ body {
 }
 
 header {
-    width: 1080px;
+    max-width: 1440px;
+
     height: 36px;
     margin: 72px auto 0;
     display: flex;
@@ -162,7 +158,7 @@ h1 {
     text-align: left;
 }
 
-.mac {
+.mac img {
     display: flex;
     justify-content: center;
     margin: 30px auto 0;
