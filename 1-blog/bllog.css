@@ -3,7 +3,11 @@
 }
 
 html {
-    background: #121928;
+    background: linear-gradient(#374151, #111827);
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -11,12 +15,12 @@ body {
 }
 
 header {
-    max-width: 1440px;
-
-    height: 36px;
+    max-width: 1080px;
+    height: 35px;
     margin: 72px auto 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 77px;
 }
 
 .logo {
@@ -26,14 +30,13 @@ header {
     line-height: 21.09px;
     text-align: left;
     display: flex;
-    justify-content: space-between;
+    gap: 11px;
 }
 
 .text_logo {
     width: 80px;
     height: 21px;
-    margin: 8px 0 8px 11px;
-    flex-grow: 1;
+    margin: 8px 0;
 }
 
 #square {
@@ -44,6 +47,7 @@ header {
     background-image: url(./images/B.svg);
     background-repeat: no-repeat;
     background-position: 13px;
+    box-shadow: 0px 15px 30px 0px #00000026;
 }
 
 header a {
@@ -52,6 +56,10 @@ header a {
     line-height: 18.75px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+nav {
+    flex: 1;
 }
 
 nav ul {
@@ -63,16 +71,9 @@ nav ul {
     text-align: left;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
     margin: 9px 0;
-}
-
-.number1 {
-    margin: 0 52px 0 0;
-}
-
-.number3 {
-    margin: 0 0 0 39px;
 }
 
 #search {
@@ -80,7 +81,6 @@ nav ul {
     background-repeat: no-repeat;
     background-position: 18px;
     outline: none;
-    height: 19px;
     font-size: 16px;
     color: #FFFFFF;
     width: 224px;
@@ -123,39 +123,31 @@ h1 {
 }
 
 .developer {
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    font-family: "Roboto";
     width: 214px;
-    margin: 30px auto 0;
+    height: auto;
     display: flex;
-}
-
-.photo {
-    justify-content: space-between;
-    column-gap: 16px;
-    flex: row wrap;
-    flex-grow: 1;
+    gap: 16px;
+    margin: 30px auto 0;
 }
 
 .meta {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .name {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
     color: #FFFFFF;
-    font-family: "Roboto";
-    text-align: left;
 }
 
 .prof {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
     color: #B7B6B6;
     margin: 0px;
-    font-family: "Roboto";
-    text-align: left;
 }
 
 .mac img {
@@ -167,29 +159,29 @@ h1 {
     max-height: 594px;
 }
 
-.text {
+section.text {
     max-width: 708px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 70px auto 0;
+}
+
+section.text>p {
     font-family: "Roboto";
-    text-align: left;
-    color: #FFFFFF;
-}
-
-.par1 {
-    font-size: 20px;
-    line-height: 32px;
-    margin: 69px auto 0;
-}
-
-.par2,
-.par3 {
     font-size: 16px;
     line-height: 30px;
-    margin: 50px auto 0;
     font-size: 16px;
     font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
 }
 
+section.text>p:first-child {
+    font-size: 20px;
+    line-height: 32px;
+}
 
 footer {
     margin: 90px auto 77px;
