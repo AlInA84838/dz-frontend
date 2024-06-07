@@ -13,41 +13,30 @@
 </head>
 
 <body>
-    <main>
-        <form action="#">
-            <div class="container">
-                <div>
+
+    <body>
+        <main>
+            <form action="">
+                <div class="title">
                     <h1>Регистрация</h1>
-                    <h2>Уже есть аккаунт? <a href="!">Войти</a></h2>
+                    <p>
+                        Уже есть аккаунт?
+                        <a href="#">Войти</a>
+                    </p>
                 </div>
-                <div class="points">
-                    <div>
-                        <label for="username"></label>
-                        <input type="text" name="username" id="username" placeholder="Название компании">
-                    </div>
-                    <div class="nameandsurname">
-                        <label for="name"></label>
-                        <input type="text" placeholder="Имя" id="name">
-                        <label for="lastname"></label>
-                        <input type="text" placeholder="Фамилия" id="lastname">
-                    </div>
-                    <div>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                    </div>
-                    <button>Зарегистрироваться</button>
-                    <div class="check_usloviya">
-                        <input type="checkbox" name="usloviyasogl" id="usloviyasogl" required>
-                        <div class="text_usloviya">
-                            <label for="usloviyasogl">Я прочитал и примаю <a href="@" class="usloviya"> Условия
-                                    соглашения
-                                </a></label>
-                        </div>
-                    </div>
+                <input type="text" name="company2" placeholder="Компания" value="Моя компания" />
+                <div class="field">
+                    <input type="text" name="firstname" placeholder="Имя" />
+                    <input type="text" name="surname" placeholder="Фамилия" />
                 </div>
-            </div>
-        </form>
-    </main>
-</body>
+                <input type="email" name="email" placeholder="E-mail" />
+                <button type="submit">Зарегистрироваться</button>
+                <div class="policy">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <label for="checkbox">Я прочитал и принимаю <a href="#">Условия пользования</a></label>
+                </div>
+            </form>
+        </main>
+    </body>
 
 </html>
