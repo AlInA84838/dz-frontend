@@ -1,0 +1,155 @@
+.rate {
+    padding: 120px 0 80px;
+}
+
+.rate .wrapper {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rate__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rate__text h3 {
+    color: var(--color-text-dark);
+    text-align: center;
+}
+
+.rate__text p {
+    color: var(--color-text-p);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23.8px;
+    text-align: center;
+}
+
+.card__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.rate-card {
+    box-shadow: 0px 0px 32px 0px #4E5D7C29;
+    max-width: 369px;
+    background: #ffff;
+    border-radius: 8px;
+    padding: 48px 40px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 20px;
+}
+
+
+.card__title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__title p {
+    color: var(--color-text-p);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23.8px;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__body div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card__body p {
+    color: #4E5D7C;
+}
+
+.rate-card {
+    gap: 34px;
+}
+
+.card__body div:not(:last-of-type)::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(78, 93, 124, 0.08);
+    grid-column: 1 / -1;
+    margin: 16px 0;
+}
+
+.card__button button {
+    width: 100%;
+}
+
+.card-3 {
+    background-color: var(--color-main-blue);
+}
+
+.card-3 h4 {
+    color: var(--color-text-light);
+}
+
+.card-3 .card__body p {
+    color: var(--color-text-light);
+}
+
+.card-3 .card__title p {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.card__sale p {
+    background: rgba(26, 188, 156, 1);
+    max-width: 96px;
+    border-radius: 8px;
+    padding: 4px 16px;
+    color: var(--color-text-light);
+}
+
+.card-1 {
+    padding-top: 110px;
+    gap: 60px;
+}
+
+.card__body-benefit-price p {
+    background: rgba(255, 199, 54, 1);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: var(--color-text-light);
+    max-width: 68px;
+}
+
+
+@media (max-width: 1190px) {
+    .card__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .rate {
+        padding: 32px 0;
+    }
+
+    .card__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .rate__text p {
+        text-align: left;
+    }
+
+    .rate__text h3 {
+        font-size: 36px;
+        align-items: start;
+        text-align: left;
+    }
+}
