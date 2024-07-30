@@ -1,0 +1,97 @@
+:root {
+    --color-main-blue: #357EFE;
+    --color-main-white: #FFFFFF;
+
+    --color-text-light: #FFFFFF;
+    --color-text-medium: #ffffffd2;
+    --color-text-dark: #000000;
+    --color-text-p: #A4ABBB;
+
+    --layout-width: 1543px;
+}
+
+html {
+    min-width: 375px;
+}
+
+body {
+    background: var(--color-main-white);
+    margin: 0;
+    font-family: Inter;
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-text-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+h1 {
+    color: var(--color-text-light);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+}
+
+h2 {
+    color: var(--color-text-dark);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+h3 {
+    color: var(--color-text-light);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+}
+
+h4 {
+    color: var(--color-text-dark);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+}
+
+h5 {
+    color: var(--color-text-light);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 39.2px;
+}
+
+a {
+    color: var(--color-text-medium);
+}
+
+a:hover {
+    color: var(--color-text-light);
+    cursor: pointer;
+}
+
+.line {
+    text-align: center;
+}

@@ -1,0 +1,135 @@
+.compare {
+    padding: 120px 0;
+}
+
+.compare .wrapper {
+    max-width: 1156px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.compare__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.compare p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    color: var(--color-text-medium);
+}
+
+.compare__content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+
+.compare__content img {
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.compare__content-ul {
+    display: flex;
+    text-align: left;
+    gap: 24px;
+    /* list-style-image: url(er.svg); */
+}
+
+.compare__content-ul p {
+    color: var(--color-text-light);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+.compare__content-ul li {
+    color: var(--color-text-medium);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+}
+
+.compare__content-ul__exel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.compare__content-ul__exel ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.compare__content-ul__finio {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.compare__content-ul__finio ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+@media (max-width: 800px) {
+
+    .compare__text h3 {
+        font-size: 36px;
+    }
+
+    .compare {
+        padding: 64px 0;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    .compare {
+        padding: 64px 0;
+    }
+
+    .compare__text h3 {
+        line-height: 43.2px;
+    }
+
+    .compare__content {
+        align-items: baseline;
+        gap: 50px;
+    }
+
+    .compare__text {
+        text-align: left;
+    }
+
+    .compare__content-ul {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 630px) {
+    .compare__content {
+        align-items: baseline;
+        gap: 50px;
+    }
+
+    .compare__text {
+        text-align: left;
+    }
+
+    .compare__content-ul {
+        flex-direction: column;
+    }
+}
