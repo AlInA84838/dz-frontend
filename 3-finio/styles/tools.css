@@ -13,6 +13,8 @@
     grid-template-columns: 566px auto;
     column-gap: 65px;
     justify-content: center;
+    position: relative;
+    z-index: 95;
 }
 
 .tools__item--report,
