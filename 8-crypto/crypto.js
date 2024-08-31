@@ -21,6 +21,7 @@ function back(password2) {
 }
 
 
+
 console.log (crypto(password))
 console.log (back(password2))
 
