@@ -1,28 +1,26 @@
-const password = 'qwertyuiop'
 
-function crypto(password) {
-    const p = password.split('');
-    const a = p.slice(0,6);
-    const b = p.slice(6,8);
-    const c = p.slice(8);
+let p = 'hueghbsn'
 
-    const crP = [].concat(b,a,c).join('')
+function crypto(p) {
+   const a = p.slice(0,6);
+   const b = p.slice(6,8);
+   const c = p.slice(8);
+   
+   const p = [].concat(b,a,c,d).join('')
     
-    return (crP)
+    return (originalPassword)
 }
 
 
-const password2 = 'uiqwertyop'
+function checkPassword(encryptedPassword, originalPassword) {
 
-function back(password2) {
-    const e = password2.split(' ');
-    const startPas = (e == crypto(password)) ? true : false;
-    return startPas
+    if (!encryptedPassword || !originalPassword) {
+        return false;
+    }
+    return originalPassword === crypt(encryptedPassword);
 }
 
 
-
-console.log (crypto(password))
-console.log (back(password2))
+console.log (crypto(password), checkPassword(encryptedPassword, originalPassword))
 
 
