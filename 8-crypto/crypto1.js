@@ -19,9 +19,9 @@ encryptedPassword = crypto(originalPassword)
 function checkPassword(originalPassword, encryptedPassword) {
 
     if(crypto(encryptedPassword) === originalPassword) {
-        return true
+        return true;
     }
-    return false
+    return false;
 }
 
 console.log(checkPassword(originalPassword, encryptedPassword))
