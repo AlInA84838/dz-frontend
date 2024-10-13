@@ -22,3 +22,7 @@ function filterArray(arr, removeFunction) {
 
 const filteredNumbers = filterArray([1, 2, 3, 4, 5, 6], removeFunction)
 console.log(filteredNumbers)
+
+
+
+

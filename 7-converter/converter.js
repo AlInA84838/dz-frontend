@@ -39,4 +39,4 @@ const converter =
 console.log(converter.toFixed(2))
 }
 
-console.log(convertationMoney(4,'usd', 'eur'))
+console.log(convertationMoney(60,'rub', 'usd'))
