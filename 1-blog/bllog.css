@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+header {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 71px 0 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 77px;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+
+a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    margin: 0 auto 30px;
+    max-width: 525px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p {
+    max-width: 708px;
+    text-align: left;
+    margin: auto;
+}
+
+.text p:first-child {
+    font-size: 20px;
+}
+
+p:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+footer {
+    padding: 94px 0 77px;
+    text-align: center;
+    max-width: 226px;
+    margin: auto;
+    color: #A0A3A9;
+}
+
+.navbar__list li {
+    transition: 0.2s transform;
+}
+
+.navbar__list li:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.navbar__list li:first-child {
+    margin-right: 13px;
+}
+
+.form {
+    margin-left: auto;
+    position: relative;
+}
+
+.form img {
+    position: absolute;
+    top: 13px;
+    left: 18px;
+}
+
+.form input {
+    font-size: 16px;
+    border-radius: 100px;
+    padding: 11px 12px 11px 49px;
+    background: rgba(31, 41, 55, 0.6);
+    color: #fff;
+    border: 0;
+}
+
+.form input::placeholder {
+    font-weight: 400;
+    line-height: normal;
+    color: #a3a7ae;
+}
+
+.form input:focus-visible {
+    outline: 1px solid #4b5563;
+}
+
+.icon {
+    font-size: 18px;
+    border-radius: 3px;
+    background: #4b5563;
+    padding: 6px 12px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    margin-right: 11px;
+}
+
+.date {
+    margin: 0 auto 14px;
+    display: flex;
+    gap: 12px;
+    max-width: 202px;
+    color: #ADB1B7;
+    font-size: 14px;
+}
+
+.developer {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 28px;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.meta div:last-child {
+    font-size: 14px;
+    color: #ACAFB6;
+}
+
+.mac img {
+    width: 100vw;
+    max-width: 896px;
+    max-height: 594px;
+    margin-bottom: 70px;
+}

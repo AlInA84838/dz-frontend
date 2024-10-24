@@ -1,0 +1,53 @@
+.mobile {
+    padding-top: 40px;
+}
+
+.mobile .wrapper {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile__text h3 {
+    color: var(--color-text-dark);
+    text-align: center;
+}
+
+.mobile__text p {
+    color: var(--color-text-p);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23.8px;
+}
+
+.mobile__img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 800px) {
+    .mobile {
+        padding: 32px 0;
+    }
+
+    .mobile__text h3 {
+        text-align: start;
+        font-size: 36px;
+    }
+
+    .mobile__text p {
+        font-size: 17px;
+    }
+
+    .mobile .wrapper {
+        gap: 32px;
+    }
+}
