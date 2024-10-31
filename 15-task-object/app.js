@@ -1,5 +1,5 @@
 const taskManager = {
-    tasks: [], // исправлено на tasks
+    tasks: [], 
     lastID: 0,
 
 
@@ -53,7 +53,7 @@ const taskManager = {
     }
 };
 
-// Пример использования
+
 taskManager.addTask("Сделать уроки", 2);
 taskManager.addTask("Помыть посуду", 1);
 taskManager.addTask("Прочитать книгу", 3);
