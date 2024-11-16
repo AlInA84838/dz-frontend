@@ -1,0 +1,73 @@
+/* Общий стиль */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    max-width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #a1c4fd;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #4f87c4;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px;
+    background: #4f87c4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #3572a5;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #7f7f7f;
+    padding: 10px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border: 2px solid #a1c4fd;
+}
