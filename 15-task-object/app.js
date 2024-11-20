@@ -1,21 +1,21 @@
 const taskManager = {
-    tasks: [], 
+    tasks: [],
     lastID: 0,
 
 
-    addTask: function(title, priority) {
+    addTask: function (title, priority) {
         const newTask = {
             id: ++this.lastID,
             title: title,
             priority: priority
         };
         this.tasks.push(newTask);
-        console.log(`Добавлена задача: ${title}  ${priority}`);
+        console.log(`Добавлена задача: ${title} ${priority}`);
         return newTask;
     },
 
-    
-    deleteTask: function(id) {
+
+    deleteTask: function (id) {
         const index = this.tasks.findIndex(task => task.id === id);
         if (index !== -1) {
             const deletedTask = this.tasks.splice(index, 1);
@@ -26,8 +26,8 @@ const taskManager = {
         }
     },
 
-    
-    updateTask: function(id, newTitle, newPriority) {
+
+    updateTask: function (id, newTitle, newPriority) {
         const task = this.tasks.find(task => task.id === id);
         if (task) {
             if (newTitle !== undefined) task.title = newTitle;
@@ -38,8 +38,8 @@ const taskManager = {
         }
     },
 
-    
-    sortTasks: function(by = 'id', ascending = true) {
+
+    sortTasks: function (by = 'id', ascending = true) {
         this.tasks.sort((a, b) => {
             const comparison = a[by] - b[by];
             return ascending ? comparison : -comparison;
@@ -47,8 +47,8 @@ const taskManager = {
         console.log(`Задачи отсортированы по ${by} в порядке ${ascending ? 'возрастания' : 'убывания'}`);
     },
 
-    
-    showTasks: function() {
+
+    showTasks: function () {
         console.log("Текущие задачи:", this.tasks);
     }
 };
@@ -60,6 +60,7 @@ taskManager.addTask("Прочитать книгу", 3);
 
 taskManager.updateTask(2, "Помыть посуду и полы", 2);
 taskManager.deleteTask(1);
+
 
 taskManager.sortTasks('priority', false);
 taskManager.showTasks();
