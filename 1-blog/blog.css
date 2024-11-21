@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    margin: 0 auto;
+    background: linear-gradient(#374151, #111827);
+}
+
+header {
+    background-color: #374151;
+}
+
+#square {
+    width: 35px;
+    height: 35px;
+    background: #4B5563;
+    border-radius: 3px;
+    background-image: url(./images/B.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
+}
+
+header a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#search {
+    background-image: url(./images/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 18px;
+    outline: none;
+    height: 19px;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 224px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #31353E;
+    border: none;
+    padding: 10px 50px;
+}
+
+.content {
+    max-width: 708px;
+    margin: 0 auto;
+}
+
+#date {
+    margin: 69 auto 0;
+    width: 180px;
+    height: 16px;
+    padding: 0;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin: 0 auto 30px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    max-width: 525px;
+    text-align: center
+}
+
+.developer {
+    width: 214px;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.prof {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #B7B6B6;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.mac {
+    text-align: center;
+}
+
+.content p {
+    font-family: Roboto;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.par1 {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 69px auto 0;
+}
+
+.par2,
+.par3 {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 50px auto 0;
+}
+
+
+footer {
+    background: #121928;
+    color: #C9CCCF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer {
+    background: #121928;
+    margin: 0 auto 77px;
+    height: 28px;
+    width: 226px;
+    margin: 100px auto 77px;
+}
