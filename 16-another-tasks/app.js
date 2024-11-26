@@ -15,19 +15,6 @@ const taskManager = {
     },
 
 
-    addDescription: function (id, description) {
-
-        const task = this.tasks.find(task => task.id === id);
-
-        if (task) {
-            task.description = description;
-            console.log(`Описание для задачи с id ${id} успешно добавлено: ${task.title} (${task.description})`);
-        } else {
-            console.log(`Задача с id ${id} не найдена`);
-        }
-    },
-
-
     deleteTask: function (id) {
         const index = this.tasks.findIndex(task => task.id === id);
         if (index !== -1) {
@@ -74,7 +61,26 @@ taskManager.addTask("Прочитать книгу", 3);
 taskManager.updateTask(2, "Помыть посуду и полы", 2);
 taskManager.deleteTask(1);
 
-taskManager.addDescription(2, 'Надеюсь я пойму этот долбанный React');
-
 taskManager.sortTasks('priority', false);
+
+
+
+const description = {
+
+    addDescription: function (id, description) {
+
+        const task = this.tasks.find(task => task.id === id);
+
+        if (task) {
+            task.description = description;
+            console.log(`Описание для задачи с id ${id} успешно добавлено: ${task.title} (${task.description})`);
+        } else {
+            console.log(`Задача с id ${id} не найдена`);
+        }
+    },
+};
+
+
+description.addDescription.call(taskManager, 2, 'rfrf')
+
 taskManager.showTasks();
