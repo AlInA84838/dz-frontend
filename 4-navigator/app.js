@@ -25,5 +25,4 @@ const x = sl1 * sl2 + cl1 * cl2 * cdelta;
 const ad = Math.atan2(y, x);
 const dist = ad * 6371;
 
-
 console.log(dist);
